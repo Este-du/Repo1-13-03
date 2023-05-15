@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/53ca3375f0.js" crossorigin="anonymous"></script>
+        <title>Inicio</title>
+    </head>
+    
+    <body class=>
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="inicio.html">SentryAni</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Productos.html">Productos</a></li>
+                <li><a class="dropdown-item" href="Sobre  Nosotros.html">Sobre nosotros</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light me-2" type="submit">Search</button>
+          </form>
+          <a href="Productos.html">
+            <button class="btn btn-light btn-outline-dark me-2" type="submit"><i class="large material-icons">shopping_cart</i></button>
+          </a>
+          <a href="Login.html">
+            <button class="btn btn-light me-2" type="submit">Login</button> 
+          </a>
+          <button class="switch" id="switch">
+            <span class="pan"><i class="fa-solid fa-sun"></i></span>
+            <span class="pan"><i class="fa-solid fa-moon"></i></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <div class="contenedor">
+        <h1>Adopcion de mascotas</h1>
+        <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+           Omnis natus ab animi laborum error, similique autem libero ratione dolore a rem,
+           repudiandae quos quis temporibus nemo obcaecati iste, facilis ex.</p>
+    </div>
+
+    <!-- reloj -->
+
+    <div class="wrap-sm-12 wrap-md-6 wrap-lg-6 wrap-xl-4 wrap-xxl-4 wrap-fluid-4">
+      <div class="widget">
+        <div class="fecha">
+          <p id="diaSemana" class="diaSemana"></p>
+          <p id="dia" class="dia"></p>
+          <p>de</p>
+          <p id="mes" class="mes"></p>
+          <p>del</p>
+          <p id="year" class="year"></p>
+        </div>
+
+        <div class="reloj">
+          <p id="horas" class="horas"></p>
+          <p>:</p>
+          <p id="minutos" class="minutos"></p>
+          <p>:</p>
+          <div class="caja-segundos">
+            <p id="ampm" class="ampm"></p>
+            <p id="segundos" class="segundos"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reloj fin -->
+
+    <div class="tamanno-sm-12 tamanno-md-6 tamanno-lg-6 tamanno-xl-4 tamanno-xxl-4 tamanno-fluid-4 mb-5">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Chiguagua.png" class="d-block w-100" alt="Imagen no encontrada">
+          </div>
+          <div class="carousel-item">
+            <img src="img/doctor.jpg" class="d-block w-100" alt="Imagen no encontrada">
+          </div>
+          <div class="carousel-item">
+            <img src="img/doctor2.jpeg" class="d-block w-100" alt="Imagen no encontrada">
+          </div>
+  
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <img src="img/medico mas perro.jpg" class="img-fluid" alt="not found">
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h1>Que Hacemos</h1>
+        <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+           Omnis natus ab animi laborum error, similique autem libero ratione dolore a rem,
+           repudiandae quos quis temporibus nemo obcaecati iste, facilis ex.</p>
+      </div>
+    </div>
+    
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+    <script src="js/reloj.js"></script>    
+   </body>
+<footer>
+    <div class="contenedorFooter">
+    </div>
+</footer>
+</html>
