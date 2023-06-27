@@ -1,0 +1,65 @@
+<!-- Se llama a la plantilla -->
+{% extends "./base.html" %}
+  {% load static %}
+
+
+  {% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <style>
+    .titulo {
+        margin: 0;
+        padding: 0;
+        font-family: Hehe;
+    }
+  </style>
+  {% endblock %}
+  
+  {% block body %}
+  <div class="contenedor" id="titulo">
+    <h1>Adopcion de mascotas</h1>
+    <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+       Omnis natus ab animi laborum error, similique autem libero ratione dolore a rem,
+       repudiandae quos quis temporibus nemo obcaecati iste, facilis ex.</p>
+    
+    <button class="btn btn-light" id="switchColor">Sorpresa</button>
+  </div>
+
+  <div class="tamanno-sm-12 tamanno-md-6 tamanno-lg-6 tamanno-xl-4 tamanno-xxl-4 tamanno-fluid-4 mb-5">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/Chiguagua.png' %}" class="img-fluid d-block w-100" alt="Imagen no encontrada">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/doctor.jpg' %}" class="img-fluid d-block w-100" alt="Imagen no encontrada">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/doctor2.jpeg' %}" class="img-fluid d-block w-100" alt="Imagen no encontrada">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  {% endblock %}
+  {% block script %}
+  <script src="{% static 'js/reloj.js' %}"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script>
+    $(document).ready(() => {
+        $('#switchColor').click(function() {
+            $('#titulo').addClass('titulo');
+        });
+    });
+  </script> 
+  {% endblock %}
+
+  {% block footer %}
+  {% endblock %}

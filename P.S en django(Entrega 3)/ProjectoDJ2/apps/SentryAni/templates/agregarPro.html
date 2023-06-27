@@ -1,0 +1,65 @@
+{% extends "./base.html" %}
+  {% load static %}
+
+
+  {% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  {% endblock %}
+  
+  {% block body %}
+  <div class="container">
+    <div class="tablr_header">
+        <h2>Productos</h2>
+        <button>Nuevo producto</button>
+        <select name="" id="">
+
+            <option value="">Gatos</option>
+            <option value="">Perros</option>
+    
+        </select>
+        <div class="input_search">
+            <input type="search" placeholder="Buscar">
+            <i class="bi bi-search" id="search"></i>
+        </div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">SKU</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Fecha Vencimiento</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for p in prod %}
+              <tr>
+                <th scope="row">{{p.sku}}</th>
+                <td><img src="{{p.image_url.url}}" alt="" height="100"></td>
+                <td>{{p.nombre}}</td>
+                <td>{{p.descripcion}}</td>
+                <td>{{p.stock}}</td>
+                <td>{{p.precio}}</td>
+                <td>{{p.fecha_vencimiento}}</td>
+                <td>{{p.categoria_id}}</td>
+                <td class="d-flex">2
+                    <a href="/editarPro/{{p.sku}}" class="btn btn-primary mx-2"><i class="bi bi-pencil-square"></i> Editar</a>
+                    <a href="/eliminarProducto/{{p.sku}}" class="btn btn-danger mx-2"><i class="bi bi-trash"></i> Eliminar</a>
+                </td>
+              </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+    </div>
+</div>
+  {% endblock %}
+  {% block script %}
+  <script src="{% static 'js/reloj.js' %}"></script>
+  {% endblock %}
+
+  {% block footer %}
+  {% endblock %}

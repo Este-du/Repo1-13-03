@@ -1,0 +1,116 @@
+<!-- Se llama a la plantilla -->
+{% extends "./base.html" %}
+  {% load static %}
+
+
+  {% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  {% endblock %}
+  
+  {% block body %}
+  <div class="contenedor">
+    <h1>Prouctos Complementarios</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Omnis natus ab animi laborum error, similique autem libero ratione dolore a rem,
+        repudiandae quos quis temporibus nemo obcaecati iste, facilis ex.</p>
+    </div>
+
+    <div class="conteinerCartas text-center">
+        <div class="card me-2 shadow" style="width: 18rem;">
+          <span class="titulo-item">Collar</span>
+          <img src="{% static 'img/collar.jpg' %}" alt="" class="img-item">
+          <span class="precio-item">$5.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+
+        <div class="card me-2 shadow" style="width: 18rem;">
+          <span class="titulo-item">Pedigree</span>
+          <img src="{% static 'img/Pedigree.jpg' %}" alt="" class="img-item">
+          <span class="precio-item">$25.000</span>
+          <button class="boton-item">Agregar al Carrito</button>  
+        </div>
+
+        <div class="card me-2 shadow" style="width: 18rem;">
+          <span class="titulo-item">Whiskas</span>
+          <img src="{% static 'img/Whiskas.png' %}" alt="" class="img-item ">
+          <span class="precio-item">$25.000</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+      </div>
+
+      <!-- Carrito -->
+      <div class="carrito">
+        <div class="header-carrito">
+          <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+          <!--
+          <div class="carrito-item">
+            <img src="{% static 'img/collar.jpg' %}" alt="" width="80px">
+            <div class="carrito-items-detalles">
+              <span class="carrito-item-titulo">Collar</span>
+              <div class="selector-cantidad">
+                <i class="fa-solid fa-minus restar-cantidad"></i>
+                <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                <i class="fa-solid fa-plus sumar-cantidad"></i>
+              </div>
+              <span class="carrito-item-precio">$5.000</span>
+            </div>
+            <span class="btn-eliminar">
+              <i class="fa-solid fa-trash"></i>
+            </span>
+          </div>
+
+          <div class="carrito-item">
+            <img src="{% static 'img/Pedigree.jpg' %}" alt="" width="80px">
+            <div class="carrito-items-detalles">
+              <span class="carrito-item-titulo">Pedigree</span>
+              <div class="selector-cantidad">
+                <i class="fa-solid fa-minus restar-cantidad"></i>
+                <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                <i class="fa-solid fa-plus sumar-cantidad"></i>
+              </div>
+              <span class="carrito-item-precio">$25.000</span>
+            </div>
+            <span class="btn-eliminar">
+              <i class="fa-solid fa-trash"></i>
+            </span>
+          </div>
+
+          <div class="carrito-item">
+            <img src="{% static 'img/Whiskas.png' %}" alt="" width="80px">
+            <div class="carrito-items-detalles">
+              <span class="carrito-item-titulo">Whiskas</span>
+              <div class="selector-cantidad">
+                <i class="fa-solid fa-minus restar-cantidad"></i>
+                <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                <i class="fa-solid fa-plus sumar-cantidad"></i>
+              </div>
+              <span class="carrito-item-precio">$25.000</span>
+            </div>
+            <span class="btn-eliminar">
+              <i class="fa-solid fa-trash"></i>
+            </span>
+          </div>
+          -->
+          
+        </div>
+        <div class="carrito-total">
+          <div class="fila">
+            <strong>Tu Total</strong>
+            <span class="carrito-precio-total">
+              $125.000
+            </span>
+          </div>
+          <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
+      </div>
+      <!-- Carrito fin -->
+  {% endblock %}
+  {% block script %}
+  <script src="{% static 'js/reloj.js' %}"></script>
+  {% endblock %}
+
+  {% block footer %}
+  {% endblock %}
